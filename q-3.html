@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+</head>
+
+<body>
+    <h3 id="max"></h3>
+    <h3 id="min"></h3>
+
+
+    <script>
+        function findMinMax(arr) {
+            if (arr.length === 0) {
+                return { max: null, min: null };
+            }
+
+            let max = arr[0];
+            let min = arr[0];
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+
+            return { max, min };
+        }
+
+        const a = [5, 10, 15, 20, 25, 3, 40, -2];
+
+        const result = findMinMax(a);
+
+        document.getElementById('max').innerHTML = 'Maximum value = ' + result.max;
+        document.getElementById('min').innerHTML = 'Maximum value = ' + result.min;
+
+    </script>
+</body>
+
+</html>

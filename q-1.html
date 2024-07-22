@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+</head>
+
+<body>
+    <h3 id="a"></h3>
+    <h3 id="b"></h3>
+    <h3 id="c"></h3>
+    <h3 id="d"></h3>
+    <h3 id="e"></h3>
+    <h3 id="f"></h3>
+
+    <script>
+        var a = ["Red", "Green", "White", "Black"];
+        var f = a;
+        document.getElementById('a').innerHTML = a;
+
+        var b = a.join('+')
+        document.getElementById('b').innerHTML = b;
+
+        a.pop();
+        document.getElementById('c').innerHTML = a;
+
+        c = a.shift();
+        document.getElementById('d').innerHTML = c;
+
+        document.getElementById('e').innerHTML = a;
+
+        a.unshift('Red');
+        a.push('Black', 'Orange');
+        document.getElementById('f').innerHTML = a;
+    </script>
+</body>
+
+</html>

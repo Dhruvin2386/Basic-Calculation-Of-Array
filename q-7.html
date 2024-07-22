@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-7</title>
+</head>
+
+<body>
+
+    <h3 id="ascending"></h3>
+    <h3 id="color"></h3>
+
+
+
+    <script>
+        var num = [23, 20, 17, 12, 5, 0, 1, 5, 12, 19, 20];
+
+        num.sort((a, b) => a - b);
+
+        document.getElementById("ascending").innerHTML = (num);
+
+        var mycolor = ["Red", "Green", "White", "Black"];
+
+        mycolor.sort();
+        document.getElementById("color").innerHTML = (mycolor);
+    </script>
+</body>
+
+</html>

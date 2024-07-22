@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+</head>
+
+<body>
+
+    <h3 id="sum"></h3>
+    <h3 id="sum1"></h3>
+
+    <script>
+        var a = [1, 2, 3, 4, 5];
+        var sum = 0;
+
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i];
+
+        }
+        document.getElementById('sum').innerHTML = 'The total of array value = ' + sum + 'Using For loop.';
+
+
+        let sum1 = 0;
+
+        a.forEach(function(element) {
+        sum1 += element;
+        document.getElementById('sum1').innerHTML = 'Sum using forEach loop: ' + sum1;
+});
+    </script>
+</body>
+
+</html>
